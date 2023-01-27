@@ -1,5 +1,5 @@
 *{
-  background-color: #e1e1e1;
+  background-color: #F3F5FC;
   box-sizing: border-box;
   border: 0;
   padding: 0;
@@ -8,10 +8,11 @@
 
 /* header */
 .img-icon{
-  background-color: lightslategrey;
-  color: whitesmoke;
-  width: 375;
+  color: #0A3871;
+  font-size: 78px;
   padding: 0 0;
+  margin: 0 0;
+  margin-left: 25px;
 }
 
 /* main */
@@ -21,11 +22,40 @@ main{
   margin-left: 88px;
 }
 
-.text-area{
+main section .text-area{
   border: none;
   color: #0A3871;
-  margin-top: 90px;
+  margin-top: 50px;
   text-transform: lowercase;
+}
+
+.text-area::placeholder{
+  color: #0A3871;
+}
+.text-area:focus{
+  outline: none;
+}
+
+main section div {
+  display: flex;
+  align-items: center;
+}
+
+main section div span{
+  background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 9px;
+}
+.consideraciones{
+  color: #495057;
+  font-weight: 400;
+  padding-left: 15px;
 }
 .buttons{
   display: flex;
@@ -39,6 +69,7 @@ main{
   cursor: pointer;
   height: 67px;
   width: 328px;
+  margin: 0 10px;
 }
 .button-desencriptar{
   background-color: #D8DFE8;
@@ -48,6 +79,7 @@ main{
   cursor: pointer;
   height: 67px;
   width: 328px;
+  margin: 0 10px;
 }
 
 .button-copy{
@@ -57,21 +89,22 @@ main{
   cursor: pointer;
   height: 67px;
   width: 328px;
-  margin-left: 108px;
-  margin-top: 402px;
+  margin-left: 178px;
+  display: block;
   position: absolute;
+  bottom: 198px;
 }
-.tex-menssage{
+.text-menssage{
   background-color: white;
   border: none;
-  border-radius: 24px;
+  border-radius: 12px;
   color: #0A3871;
   margin-left: 98px;
   margin-top: 20px;
   padding-left: 20px;
   position: fixed;
 }
-.tex-menssage:focus{
+.text-menssage:focus{
   outline: none;
 }
 /* footer */
